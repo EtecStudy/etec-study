@@ -1,11 +1,12 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101827">
-  <title>ETEC Study — Estude no seu ritmo</title>
+  <title>ETEC Study — Prepare-se para a ETEC</title>
+
   <style>
     * { box-sizing: border-box; }
 
@@ -39,11 +40,14 @@
       font-size: 22px;
     }
 
-    .brand { font-size: 20px; font-weight: 750; }
+    .brand {
+      font-size: 20px;
+      font-weight: 750;
+    }
 
     .hero {
-      padding: 75px 0 65px;
-      max-width: 720px;
+      padding: 85px 0 90px;
+      max-width: 760px;
     }
 
     .tag {
@@ -68,43 +72,25 @@
       font-size: 17px;
     }
 
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 30px;
-    }
-
     .button {
       display: inline-block;
-      padding: 15px 22px;
+      margin-top: 22px;
+      padding: 16px 24px;
       border-radius: 11px;
+      background: #7968ff;
+      color: white;
       text-decoration: none;
       font-weight: 750;
     }
 
-    .primary { background: #7968ff; color: white; }
-    .secondary {
-      border: 1px solid #344258;
-      color: white;
+    .button:hover { background: #6553ed; }
+
+    .about {
+      border-top: 1px solid #29364a;
+      padding: 35px 0 60px;
     }
 
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin: 10px 0 65px;
-    }
-
-    .feature {
-      border: 1px solid #29364a;
-      border-radius: 15px;
-      padding: 22px;
-      background: #151f30;
-    }
-
-    .feature h2 { font-size: 18px; }
-    .feature p { font-size: 14px; }
+    .about h2 { font-size: 24px; }
 
     footer {
       border-top: 1px solid #29364a;
@@ -114,11 +100,12 @@
     }
 
     @media (max-width: 500px) {
-      .hero { padding-top: 45px; }
+      .hero { padding-top: 50px; }
       .button { width: 100%; text-align: center; }
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo">E</div>
@@ -128,43 +115,34 @@
   <main>
     <section class="hero">
       <div class="tag">SUA PREPARAÇÃO COMEÇA AQUI</div>
-      <h1>Estude melhor.<br><span>Chegue preparado.</span></h1>
+
+      <h1>
+        Estude melhor.<br>
+        <span>Chegue preparado.</span>
+      </h1>
+
       <p>
-        Organize seus estudos para o Vestibulinho ETEC.
-        Acesse matérias, acompanhe seu progresso e pratique
-        com os recursos disponíveis no aplicativo.
+        Um aplicativo para organizar sua preparação para o Vestibulinho ETEC,
+        com matérias, conteúdos de estudo e ferramentas disponíveis no próprio app.
       </p>
 
-      <div class="actions">
-        <a class="button primary"
-           href="https://github.com/SEU-USUARIO/etec-study/releases/latest">
-          Baixar para Windows
-        </a>
-        <a class="button secondary"
-           href="#recursos">
-          Conhecer o aplicativo
-        </a>
-      </div>
+      <a class="button" href="https://github.com/amaralnicolas711-alt/etec-study/releases/latest">
+        Baixar para Windows 10/11
+      </a>
     </section>
 
-    <section class="features" id="recursos">
-      <article class="feature">
-        <h2>Matérias</h2>
-        <p>Conteúdos organizados para sua preparação.</p>
-      </article>
-      <article class="feature">
-        <h2>Quiz com IA</h2>
-        <p>Pratique com os recursos de quiz disponíveis.</p>
-      </article>
-      <article class="feature">
-        <h2>Seu progresso</h2>
-        <p>Acompanhe suas atividades e continue estudando.</p>
-      </article>
+    <section class="about">
+      <h2>Sobre o ETEC Study</h2>
+      <p>
+        O ETEC Study é um aplicativo de estudos para Windows pensado para
+        ajudar você a organizar sua rotina e se preparar para o Vestibulinho ETEC.
+      </p>
     </section>
   </main>
 
   <footer>
-    ETEC Study · Aplicativo de estudos para Windows
+    ETEC Study · Aplicativo de estudos para Windows 10 e 11
   </footer>
 </body>
 </html>
+```
